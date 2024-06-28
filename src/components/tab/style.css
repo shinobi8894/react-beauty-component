@@ -1,0 +1,30 @@
+/* style.css */
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-buttons {
+  display: flex;
+}
+
+.tab-button {
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #f0f0f0;
+}
+
+.tab-button.active {
+  background-color: #ccc;
+  border-bottom: 2px solid #666;
+}
+
+.tab-content {
+  animation: fadeIn 0.5s ease;
+}
