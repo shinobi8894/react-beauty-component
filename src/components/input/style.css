@@ -1,7 +1,7 @@
 input {
   outline: none;
 
-  border: 1px solid gray;
+  border: 1px solid var(--color-gray);
 
   padding: 0.5rem 1rem;
   height: 2.5rem;
@@ -13,14 +13,14 @@ input {
 }
 
 input:hover {
-  border-color: #1a69ff;
-  box-shadow: 0 0 10px rgba(26, 105, 255, 0.2);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary-200);
 }
 
 input:focus {
-  border-color: #1a69ff;
+  border-color: var(--color-primary);
   transform: translateY(-5px);
-  box-shadow: 0 0 10px rgba(26, 105, 255, 0.2);
+  box-shadow: 0 0 10px var(--color-primary-200);
 }
 
 input:focus::placeholder {

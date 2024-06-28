@@ -1,9 +1,9 @@
 import Input from "./components/input";
-import "./App.css";
-import "./reset.css";
 import Button from "./components/button";
 import Card from "./components/card";
 import Tab from "./components/tab";
+import "./App.css";
+import "./reset.css";
 
 function App() {
   const tabs = [
