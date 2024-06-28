@@ -8,7 +8,7 @@ button {
     height: 2.5rem;
     border-radius: 1rem;
     background-color: var(--color-gray);
-    color: white;
+    color: var(--color-white);
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;

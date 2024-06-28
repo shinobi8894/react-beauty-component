@@ -6,7 +6,7 @@
   margin: 20px;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* add transition effect */
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .shinobi-card:hover {

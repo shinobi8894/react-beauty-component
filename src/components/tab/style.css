@@ -20,16 +20,16 @@
 
 .tab-button:hover {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .tab-button.active {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .tab-content {
   animation: fadeIn 0.5s ease;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   padding: 1rem;
 }
