@@ -1,0 +1,53 @@
+.shinobi-card {
+    max-width: 20rem;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(26, 105, 255, 0.1);
+    margin: 20px;
+    display: inline-block;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* add transition effect */
+    cursor: pointer;
+  }
+  
+  .shinobi-card:hover {
+    box-shadow: 0 0 10px rgba(26, 105, 255, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .shinobi-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  
+  .card-content button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .card-content button:hover {
+    background-color: #3e8e41;
+  }

@@ -1,0 +1,26 @@
+/* Button styles */
+button {
+    /* Remove default border and outline */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    background-color: gray;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #1a69ff;
+    box-shadow: 0 0 10px rgba(26, 105, 255, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Add animation when button is clicked */
+  button:active {
+    transform: scale(0.95);
+  }
