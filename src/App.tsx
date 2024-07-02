@@ -3,6 +3,7 @@ import Button from "./components/button";
 import Card from "./components/card";
 import Tab from "./components/tab";
 import TreeMenu from "./components/tree";
+import Tooltip from "./components/tooltip";
 import "./App.css";
 import "./reset.css";
 
@@ -50,6 +51,10 @@ function App() {
         <Button />
         <Card />
         <Tab tabs={tabs} />
+
+        <Tooltip text="This is a tooltip!">
+          Hover me
+        </Tooltip>
       </div>
     </div>
   );
