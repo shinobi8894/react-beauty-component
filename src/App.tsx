@@ -24,29 +24,20 @@ function App() {
 
   const treeData = [
     {
-      label: 'Parent 1',
+      label: "Components",
       children: [
         {
-          label: 'Child 1',
-          children: [
-            { label: 'Grandchild 1' },
-            { label: 'Grandchild 2' },
-          ],
+          label: "Input",
         },
         {
-          label: 'Child 2',
-          children: [
-            { label: 'Grandchild 3' },
-            { label: 'Grandchild 4' },
-          ],
+          label: "Tabs",
         },
-      ],
-    },
-    {
-      label: 'Parent 2',
-      children: [
-        { label: 'Child 3' },
-        { label: 'Child 4' },
+        {
+          label: "Button",
+        },
+        {
+          label: "Card",
+        },
       ],
     },
   ];

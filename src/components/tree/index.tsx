@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./style.css";
 import Icon from "../icon";
+import "./style.css";
 
 interface TreeNodeProps {
   label: string;

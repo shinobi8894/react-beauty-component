@@ -6,7 +6,7 @@ input {
   padding: 0.5rem 1rem;
   height: 2.5rem;
 
-  border-radius: 1rem;
+  border-radius: var(--radius);
 
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
     transform 0.3s ease-in-out;
@@ -19,12 +19,12 @@ input:hover {
 
 input:focus {
   border-color: var(--color-primary);
-  transform: translateY(-5px);
+  transform: translateY(var(--float));
   box-shadow: 0 0 10px var(--color-primary-200);
 }
 
 input:focus::placeholder {
-  transform: translateY(-5px);
+  transform: translateY(var(--float));
   opacity: 0;
 }
 

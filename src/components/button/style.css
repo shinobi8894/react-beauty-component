@@ -6,7 +6,7 @@ button {
     cursor: pointer;
     padding: 0.5rem 1rem;
     height: 2.5rem;
-    border-radius: 1rem;
+    border-radius: var(--radius);
     background-color: var(--color-gray);
     color: var(--color-white);
     font-size: 1rem;
@@ -17,7 +17,7 @@ button {
   button:hover {
     background-color: var(--color-primary);
     box-shadow: 0 0 10px var(--color-primary-200);
-    transform: translateY(-5px);
+    transform: translateY(var(--float));
   }
   
   /* Add animation when button is clicked */

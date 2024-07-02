@@ -10,6 +10,9 @@
   --color-success-hover: rgba(62, 142, 65, 1);
   --color-white:         rgba(255, 255,255, 1);
   --color-black:         rgba(0, 0,0, 1);
+
+  --radius : 10px;
+  --float: -5px;
 }
 
 * {
