@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
+import Icon from "../icon";
 
 interface TreeNodeProps {
   label: string;
@@ -18,7 +19,9 @@ const TreeNode: React.FC<TreeNodeProps> = ({ label, children }) => {
       <div className="node-label" onClick={handleToggle}>
         {label}
         <span className={`expand-icon ${isOpen ? "rotate" : ""}`}>
-          {Array.isArray(children) && children.length > 0 && `▶`}
+          {Array.isArray(children) && children.length > 0 && (
+            <Icon icon={"arrow-left"} />
+          )}
         </span>
       </div>
       <div className={`children-container ${isOpen ? "open" : ""}`}>
