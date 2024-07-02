@@ -16,7 +16,7 @@ button {
   
   button:hover {
     background-color: var(--color-primary);
-    box-shadow: 0 0 10px var(--color-primary-200);
+    box-shadow: 0 0 var(--shadow) var(--color-primary-200);
     transform: translateY(var(--float));
   }
   

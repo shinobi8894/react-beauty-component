@@ -2,14 +2,14 @@
   max-width: 20rem;
   overflow: hidden;
   border-radius: var(--radius);
-  box-shadow: 0 0 10px var(--color-primary-100);
+  box-shadow: 0 0 var(--shadow) var(--color-primary-100);
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* add transition effect */
   cursor: pointer;
   background-color: var(--color-white);
 }
 
 .shinobi-card:hover {
-  box-shadow: 0 0 10px var(--color-primary-200);
+  box-shadow: 0 0 var(--shadow) var(--color-primary-200);
   transform: translateY(var(--float));
 }
 

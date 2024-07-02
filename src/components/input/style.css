@@ -14,13 +14,13 @@ input {
 
 input:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 0 10px var(--color-primary-200);
+  box-shadow: 0 0 var(--shadow) var(--color-primary-200);
 }
 
 input:focus {
   border-color: var(--color-primary);
   transform: translateY(var(--float));
-  box-shadow: 0 0 10px var(--color-primary-200);
+  box-shadow: 0 0 var(--shadow) var(--color-primary-200);
 }
 
 input:focus::placeholder {
