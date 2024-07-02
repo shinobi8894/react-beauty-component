@@ -25,6 +25,10 @@
   color: var(--color-white);
 }
 
+.node-label:hover svg {
+  color: var(--color-white);
+}
+
 .expand-icon {
   color: var(--color-black);
   transition: transform 0.3s ease;
@@ -35,8 +39,8 @@
 }
 
 .children-container {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
