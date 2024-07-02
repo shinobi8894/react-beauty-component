@@ -6,7 +6,7 @@ interface Tab {
   content: React.ReactNode;
 }
 
-interface TabComponentProps {
+  interface TabComponentProps {
   tabs: Tab[];
 }
 
