@@ -8,18 +8,27 @@ function App() {
   const treeData = [
     {
       label: "Components",
+      link: "",
       children: [
         {
           label: "Input",
+          link: "input",
         },
         {
           label: "Tabs",
+          link: "tabs",
         },
         {
           label: "Button",
+          link: "button",
         },
         {
           label: "Card",
+          link: "card",
+        },
+        {
+          label: "Tooltip",
+          link: "tooltip",
         },
       ],
     },
@@ -27,8 +36,8 @@ function App() {
 
   return (
     <div className="app">
-      <TreeMenu data={treeData} />
       <Router>
+        <TreeMenu data={treeData} />
         <Pages />
       </Router>
     </div>

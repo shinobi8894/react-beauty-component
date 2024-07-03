@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import Icon from "../icon";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 interface TreeNodeProps {
   label: string;
+  link: string;
   children?: TreeNodeProps[];
 }
 
-const TreeNode: React.FC<TreeNodeProps> = ({ label, children }) => {
+const TreeNode: React.FC<TreeNodeProps> = ({ label, link, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -15,7 +17,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ label, children }) => {
   };
 
   return (
-    <div className="tree-node">
+    <Link to={link ? link : "/"} className="tree-node">
       <div className="node-label" onClick={handleToggle}>
         {label}
         <span className={`expand-icon ${isOpen ? "rotate" : ""}`}>
@@ -33,7 +35,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ label, children }) => {
           </div>
         )}
       </div>
-    </div>
+    </Link>
   );
 };
 
