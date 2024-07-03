@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 interface TooltipProps {
@@ -7,10 +7,24 @@ interface TooltipProps {
 }
 
 const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <div>
+    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <span className="tooltip-label">{children}</span>
-      <div className="tooltip">
+      <div
+        className={`tooltip ${
+          isHovered ? "tooltip-hover" : "tooltip-hoverout"
+        }`}
+      >
         <p>{text}</p>
       </div>
     </div>

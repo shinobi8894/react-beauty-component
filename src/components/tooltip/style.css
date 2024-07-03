@@ -12,16 +12,17 @@
   pointer-events: none;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   transform: translateY(10px);
+  opacity: 0;
 }
 
-.tooltip-label:hover + .tooltip {
+.tooltip-hover {
   animation: fade-in 0.3s ease-in-out forwards;
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-.tooltip-label:not(:hover) + .tooltip {
+.tooltip-hoverout{
   animation: fade-out 0.3s ease-in-out forwards;
 }
 
