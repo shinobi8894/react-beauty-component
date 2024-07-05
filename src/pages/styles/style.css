@@ -1,0 +1,11 @@
+.card {
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius);
+}
+
+.card-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}

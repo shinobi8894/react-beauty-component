@@ -3,12 +3,17 @@ import TreeMenu from "./components/tree";
 import Pages from "./pages";
 import "./App.css";
 import "./reset.css";
+import Snippet from "./components/snippet";
 
 function App() {
   const treeData = [
     {
+      label: "Styles",
+      link: "styles",
+    },
+    {
       label: "Components",
-      link: "",
+      link: "#",
       children: [
         {
           label: "Input",
@@ -40,6 +45,7 @@ function App() {
         <TreeMenu data={treeData} />
         <Pages />
       </Router>
+      <Snippet/>
     </div>
   );
 }
